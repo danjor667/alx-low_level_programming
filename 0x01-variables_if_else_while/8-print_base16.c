@@ -5,14 +5,16 @@
  */
 int main(void)
 {
-	char c = 0;
+	int n;
 	char new;
 
-	while (c < 16)
+	for (n = 0; n <= 9; n++)
 	{
-		 new = putchar("%x", c);
-		 /* putchar(new);*/
-		 c++;
+		putchar('0' + n);
+	}
+	for (new = 'a'; new <= 'f'; new++)
+	{
+		putchar(new);
 	}
 	putchar('\n');
 	return (0);
