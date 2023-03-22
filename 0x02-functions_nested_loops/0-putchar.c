@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * main - a function that print _putchar
+ * Return: (0)
+ */
 int main(void)
 {
 	_putchar('_');
