@@ -1,13 +1,12 @@
 #include "main.h"
 /**
- * _strncpy - a function that concatenate the first n char to another
- * string
- * @n: the number of char to be add to the dest string
- * @dest: the destination string
- * @src: the source string
- * Return: (char)
+ * _strncat - a function that concatenat  char to a string
+ * @dest: the destination file
+ * @src: the source file
+ * @n: the amount of char to concatenate
+ * Return: (void)
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int destlen = 0;
 	int srclen = 0;
@@ -29,3 +28,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	return (dest);
 }
+
+
+
+
