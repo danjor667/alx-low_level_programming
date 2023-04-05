@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * _pow_recursion - a function to calculate the
  * power of x raised to y
