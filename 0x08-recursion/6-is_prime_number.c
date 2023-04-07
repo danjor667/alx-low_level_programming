@@ -13,14 +13,6 @@ int is_prime_number(int n)
 		return (0);
 }
 /**
- * a number n is prime if
- * it is > 1
- * odd
- * and there is no number less than n/2
- * that divides ir evenly
- */
-
-/**
  *prime - checks if n is a prime number
  *@d: divisor
  *@n: int number
