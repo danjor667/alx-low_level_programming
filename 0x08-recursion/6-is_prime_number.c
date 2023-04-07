@@ -1,28 +1,36 @@
 #include "main.h"
 
 /**
- *is_prime_number - checks if an int is a prime number
+ *is_prime_number - a function that checks for a prime no
  *@n: int
- *Return: 1(true) 0(false)
+ *Return: (true if 1) (false if 0)
  */
 int is_prime_number(int n)
 {
 	if (n > 1)
+	{
 		return (prime(n, 2));
+	}
 	else
+	{
 		return (0);
+	}
 }
 /**
- *prime - checks if n is a prime number
- *@d: divisor
+ *prime - a function that checks is a number is prime
+ *@y: divisor
  *@n: int number
  *Return: int
  */
-int prime(int n, int d)
+int prime(int n, int y)
 {
-	if (n % d == 0)
+	if (n % y == 0)
+	{
 		return (0);
-	if (d > (n / 2))
+	}
+	if (y > (n / 2))
+	{
 		return (1);
-	return (prime(n, d + 1));
+	}
+	return (prime(n, y + 1));
 }
