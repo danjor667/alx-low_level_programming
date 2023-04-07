@@ -28,7 +28,7 @@ int sqr(int n, int start, int  end)
 	}
 	else
 	{
-		int mp = start + (end - start) / 2;
+		long int mp = start + (end - start) / 2;
 
 		if (mp * mp == n)
 		{
