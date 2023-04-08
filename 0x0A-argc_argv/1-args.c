@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "main.h"
-/** main - the entry point
- * @argc: input argument 
+/**
+ * main - the entry point
+ * @argc: input argument
  * @argv: input argument
  * Return: int
  */
