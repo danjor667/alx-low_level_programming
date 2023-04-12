@@ -15,7 +15,6 @@ char *_strdup(char *str)
 	new_array = malloc(strlen(str) + 1);
 	if (str == NULL)
 	{
-		free(new_array);
 		return (NULL);
 	}
 	while (str[i] != '\0')
