@@ -17,6 +17,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	if (new_array == NULL)
+	{
+		free(new_array);
+		return (NULL);
+	}
 	while (str[i] != '\0')
 	{
 		new_array[i] = str[i];
