@@ -12,8 +12,8 @@ char *_strdup(char *str)
 	char *new_array;
 	int i = 0;
 
-	new_array = malloc(sizeof(*new_array) * strlen(str) + 1);
-	if (str == NULL)
+	new_array = malloc( strlen(str) + 1);
+	if ((str = NULL))
 	{
 		return (NULL);
 	}
