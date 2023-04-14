@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * string_nconcat - a funtion to add concatenate 
+ * string_nconcat - a funtion to add concatenate
  * n char from str2 to s1
  * @s1: destination input string
  * @s2: source input string
+ * @n: number of char to add
  * Return: pointer to new strig memory
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -25,7 +26,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = strlen(s2);
 	}
-	str = malloc((strlen(s1) + n) + 1);
+	str = malloc(sizeof(*str) * (strlen(s1) + n) + 1);
 	while (s1[i] != '\0')
 	{
 		str[i] = s1[i];
