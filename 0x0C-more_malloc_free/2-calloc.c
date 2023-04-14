@@ -6,13 +6,14 @@
  * memory using malloc
  * @nmemb: number of element
  * @size: size of the element
+ * Return: pointer to the created array
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int *array;
 
-	array = malloc(sizeof(size) * nmemb);
+	array = malloc(size * nmemb);
 	if (nmemb == 0 || size == 0)
 	{
 		free(array);
@@ -21,6 +22,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	if (array == NULL)
 		return (NULL);
-	memset(array, 0, (sizeof(size) * nmemb));
+	memset(array, 0, size * nmemb);
 	return (array);
 }
