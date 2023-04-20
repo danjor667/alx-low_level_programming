@@ -39,6 +39,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d", x);
 		}
 	}
-	print("\n");
+	printf("\n");
 	va_end(args);
 }
