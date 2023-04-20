@@ -2,6 +2,13 @@
 #include "variadic_functions.h"
 #include <stdlib.h>
 #include <stdio.h>
+/**
+ * print_strings- function to print all stringgs
+ * passed as arguments
+ * @separator: input separator
+ * @n: number of string inputed
+ * Return: void
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	char *string;
