@@ -19,25 +19,22 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			int x = va_arg(args, int);
-
-			printf("%d", x);
+			printf("%d", va_arg(args, int));
 		}
 		printf("\n");
 		va_end(args);
 	}
 	for (i = 0; i < n; i++)
 	{
-		int x = va_arg(args, int);
-
 		count++;
 		if (count != n)
 		{
-			printf("%d%s", x, separator);
+			printf("%d", va_arg(args, int));
+			printf("%s", separator);
 		}
 		else
 		{
-			printf("%d", x);
+			printf("%d", va_arg(args, int));
 		}
 	}
 	printf("\n");
