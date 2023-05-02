@@ -12,7 +12,7 @@
 	{
 		printf("%d\n", h->n);
 		i++;
-		h = h->next
+		h = h->next;
 	}
 	return (i);
  }
