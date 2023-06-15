@@ -9,7 +9,7 @@
  { 
          size_t m = 0;
   
-         while (*h != NULL) 
+         while (h) 
          { 
                  h = h->next; 
                  m++; 
